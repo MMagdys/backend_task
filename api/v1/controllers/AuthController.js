@@ -1,7 +1,7 @@
 const express = require('express');
 const AuthRouter = express.Router();
-const UserAuthService = require('../../services/user/UserAuthService');
-const ResponseUtils = require('../../utils/ResponseUtils');
+const UserAuthService = require('../../../services/user/UserAuthService');
+const ResponseUtils = require('../../../utils/ResponseUtils');
 
 
 AuthRouter.post('/login', UserAuthService.authenticate, async function(req, res, next) {

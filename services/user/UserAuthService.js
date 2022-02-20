@@ -35,7 +35,7 @@ exports.getIdToken = function (user) {
     }
 
 	return jwt.sign(userInfo, Config.privateKey,{
-        issuer: 'bosta.co',
+        issuer: 'mmagdys',
         expiresIn: Config.idTokenTimeToLive
     });
 };
@@ -44,7 +44,7 @@ exports.getIdToken = function (user) {
 let opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = Config.privateKey;
-opts.issuer = 'bosta.co';
+opts.issuer = 'mmagdys';
 
 
 exports.jwtPassport = passport.use('userjwt', 

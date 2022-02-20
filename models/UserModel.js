@@ -13,10 +13,7 @@ const UserSchema = new schema({
 	email: {
         type: String,
         require: true
-	},
-	refreshToken: {
-		type: String
-	},
+	}
 }, {
 	timestamps: true
 });
